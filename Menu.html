@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
      <meta name="description" content="full menu Moti Mahal">
      <title>Menu</title>
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
    <!-- Google Fonts -->
-
-   <link rel="shortcut icon" href="logo1.png">
-   <script type="text/javascript" src="./Menu - Copy_files/wz_jsgraphics.js.download"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="https://devansgh.github.io/Menu/logo1.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    <style>
    
     body{
@@ -192,6 +192,33 @@
       <div style="position: absolute; left: 74.16px; top: 87.39px" class="cls_003">
         <span class="cls_003">Tomato Soup</span>
       </div>
+      
+  <script language="javascript">
+/*
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}*/
+if(navigator.serviceWorker){
+  navigator.serviceWorker.register(sw.js)
+}
+</script>
       <div style="position: absolute; left: 506.1px; top: 87.39px" class="cls_003">
         <span class="cls_003">285/-</span>
       </div>
@@ -823,6 +850,7 @@
       </div>
       <div style="position: absolute; left: 497.36px; top: 123.87px" class="cls_003">
         <span class="cls_003">455/-</span>
+        
       </div>
       <div style="position: absolute; left: 82.68px; top: 143.55px" class="cls_003">
         <span class="cls_003">Jeera Pulao</span>
@@ -1078,86 +1106,187 @@
         <span class="cls_007">Vegan &amp; Jain Food Also Available*</span>
       </div>
     </div>
-       
-    <script type="text/javascript">
-      myAlert("My custom title", "Some content");
-      </script>
-    <section class="socials" id="al" align="center" style="padding-top: 3940px;     position: absolute;
-    margin-left: 42.5%;
-    align-self: center;  ">
 
-    <a href="#" onclick=" Alert.render('sorry it is not available we are working on it')" ><i class="fas fa-phone-alt"> </i></a>
-    <a href="#" onclick=" Alert.render('sorry it is not available we are working on it')" ><i class="fas fa-envelope"></i></a>
-      <a href="https://www.facebook.com/MotiMahalNepal/"
-      target="_blank"><i class="fab fa-facebook"></i
-      ></a>
-      <a href="https://www.tripadvisor.com/3395332"
-      target="_blank"><i class="fab fa-tripadvisor"></i
-      ></a>
-    </section>
   </body>
-<body>
-  <style>
-    #dialogoverlay{
-      display: none;
-      opacity: .8;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      background: #FFF;
-      width: 100%;
-      z-index: 10;
-      height: fit-content;
-      height: max-content;
-    }
-    #dialogbox{
-      display: none;
-      position: fixed;
-      background: #000;
-      border-radius:7px; 
-      width:550px;
-      z-index: 10;
-    }
-    #dialogbox > div{ background:#FFF; margin:8px; }
-    #dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
-    #dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
-    #dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
-    </style>
-    <script>
-    function CustomAlert(){
-        this.render = function(dialog){
-            var winW = window.innerWidth;
-            var winH = window.innerHeight;
-            var dialogoverlay = document.getElementById('dialogoverlay');
-            var dialogbox = document.getElementById('dialogbox');
-            dialogoverlay.style.display = "block";
-            dialogoverlay.style.height = winH+"px";
-            dialogbox.style.left = (winW/2) - (550 * .5)+"px";
-            dialogbox.style.top = "100px";
-            dialogbox.style.display = "block";
-            document.getElementById('dialogboxhead').innerHTML = "Acknowledge This Message By Moti Mahal";
-            document.getElementById('dialogboxbody').innerHTML = dialog;
-            document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
-        }
-      this.ok = function(){
-        document.getElementById('dialogbox').style.display = "none";
-        document.getElementById('dialogoverlay').style.display = "none";
-      }
-    }
-    var Alert = new CustomAlert();
-    </script>
-    </head>
-    <body>
-    <div id="dialogoverlay"></div>
-    <div id="dialogbox">
-      <div>
-        <div id="dialogboxhead"></div>
-        <div id="dialogboxbody"></div>
-        <div id="dialogboxfoot"></div>
-      </div>
-    </div>
-    
 
+   
+
+
+  <body >
+    <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: #f7a619;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+     
+      }
+      
+      .text{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #000000;
+      }
+       .p{
+        font-size: 2.1875rem;
+        font-weight: 600;
+        color: #000000;
+      }
+      footer{
+        top: 4380px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background: rgb(0, 0, 0);
+      }
+      .main-content{
+        display: flex;
+      }
+      .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+      }
+      .box h2{
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .box .content{
+        margin: 20px 0 0 0;
+        position: relative;
+      }
+      .box .content:before{
+        position: absolute;
+        content: '';
+        top: -10px;
+        height: 2px;
+        width: 100%;
+        background: #ffffff;
+      }
+  
+      .left .content p{
+        text-align: justify;
+      }
+      .left .content .social{
+        margin: 20px 0 0 0;
+      }
+      .left .content .social a{
+        padding: 0 2px;
+      }
+      .left .content .social a span{
+        height: 40px;
+        width: 40px;
+        background: #242424;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .left .content .social a span:hover{
+          transform:scale(1.2);
+          transition:transfrom 0.5s;
+      }
+      .center .content .fas{
+        font-size: 25px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      .center .content .text{
+        font-size: 1.0625rem;
+        font-weight: 500;
+        padding-left: 10px;
+      }
+      .center .content .phone{
+        margin: 15px 0;
+      }
+       .text{
+        font-size: 1rem;
+        margin-bottom: 2px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .bottom center{
+        padding: 5px;
+        font-size: 0.9375rem;
+        background: #2e2e2e;
+      }
+      .bottom center span{
+        color: #ffffff;
+      }
+      .bottom center a:hover{
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 900px) {
+        footer{
+          position: relative;
+          bottom: 0px;
+        }
+        .main-content{
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .main-content .box{
+          margin: 5px 0;
+        }
+      }</style>
+    <footer  >
+      <div class="main-content" style="background-color: rgb(14, 14, 14);">
+        <div class="left box">
+          <h2 style="text-align: center; ;">About us</h2>
+          <div class="content">
+            <p>  We would like to introduce ourselves as a renowned restaurant in
+                Durbar Marg above Hot Bread, opposite of Investment Bank, “MOTI MAHAL
+                DELUX, Veg Indian Fine Dining Restaurant ” which has been converted
+                into a completely vegetarian platform to all the vegetarian lovers. We
+                serve pure vegetarian North Indian food at very reasonable rates. Our
+                restaurant is open from 12 noon to 10:15 p.m and we only provide fresh
+                food to our customers. We also serve various kinds of juices, special
+                cocktails, Mocktails, and Liquor in our Bar. We would also like to
+                take feedback from you and suggestions so that we can improve our
+                services.</p>
+            <div class="social">
+              <a href="https://www.facebook.com/MotiMahalNepal/"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+              <a  href="https://www.tripadvisor.com/3395332"><span class="fab fa-tripadvisor"></span></a>
+           
+              
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2 style="text-align: center;">Address</h2>
+          <div class="content">
+            <div class="place"><a href="https://goo.gl/maps/Duz8sVXZxgxedeWH9">
+              <span class="fas fa-map-marker-alt"></span></a><a href="https://goo.gl/maps/Duz8sVXZxgxedeWH9">
+              <span class="text">MOTI MAHAL, Durbar Marg, Kathmandu 44600</span></a>
+            </div>
+            <div ><a href="tel::9851064306">
+              <span class="fas fa-phone-alt"></span></a><a href="tel::9851064306">
+              <span   class="text" style="text-decoration: none;">+977-9851064306</span></a>
+            </div>
+            <div class="email"><a href="mailto:">
+              <span class="fas fa-envelope"></span></a><a href="mailto:">
+              <span class="text">abc@example.com</span></a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="https://www.facebook.com/MotiMahalNepal/"><strong > MotiMahalNepal</strong></a> | </span>
+          <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
     </body>
-    
+  </body>
   </html>
